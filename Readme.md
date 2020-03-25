@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Степанов](https://up.htmlacademy.ru/adaptive/19/user/235498).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Чернова](https://htmlacademy.ru/profile/id49571).
 
 ---
 
