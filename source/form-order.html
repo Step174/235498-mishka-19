@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Форма для заказа</title>
   </head>
   <body>
     <header class="page-header">
@@ -18,10 +18,10 @@
             <li class="site-list__item">
               <a>Вязание на заказ</a>
             </li>
-            <li class="site-list__item--search">
+            <li class="site-list__item site-list__item--search">
               <a href="">Поиск по сайту</a>
             </li>
-            <li class="site-list__item--basket">
+            <li class="site-list__item site-list__item--basket">
               <a href="">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -30,7 +30,7 @@
     </header>
 
     <main class="page-main form-order">
-      <h2 class="page-main__heading">Каталог товаров</h2>
+      <h2 class="page-main__heading">Вязание на заказ</h2>
       <p class="form-order__about">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -55,73 +55,46 @@
           <legend>Цвет</legend>
           <ul class="color__check">
             <li>
-              <input
-                type="checkbox"
-                name="color1"
-                id="c1"
-                value="white"
-                checked
-              />
-              <label for="c1">Белый</label>F
+              <input type="checkbox" name="color1" id="color-white" value="white" checked/>
+              <label for="color-white">Белый</label>F
             </li>
             <li>
-              <input
-                type="checkbox"
-                name="color2"
-                id="c2"
-                value="gray"
-                checked
-              />
-              <label for="c2">Серый</label>F
+              <input type="checkbox" name="color2" id="color-gray" value="gray" checked/>
+              <label for="color-gray">Серый</label>F
             </li>
             <li>
-              <input type="checkbox" name="color3" id="c3" value="tiffany" />
-              <label for="c3">«Тиффани»</label>F
+              <input type="checkbox" name="color3" id="color-tiffany" value="tiffany" />
+              <label for="color-tiffany">«Тиффани»</label>F
             </li>
             <li>
-              <input type="checkbox" name="color4" id="c4" value="black" />
-              <label for="c4">Черный</label>F
+              <input type="checkbox" name="color4" id="color-black" value="black" />
+              <label for="color-black">Черный</label>F
             </li>
             <li>
-              <input type="checkbox" name="color5" id="c5" value="pink" />
-              <label for="c5">Розовый</label>F
+              <input type="checkbox" name="color5" id="color-pink" value="pink" />
+              <label for="color-pink">Розовый</label>F
             </li>
             <li>
-              <input type="checkbox" name="color6" id="c6" value="orange" />
-              <label for="c6">Оранжевый</label>F
+              <input type="checkbox" name="color6" id="color-orange" value="orange" />
+              <label for="color-orange">Оранжевый</label>F
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form-list__fio fio">
+        <fieldset class="form-list__person person">
           <legend>Тип</legend>
-          <ul class="fio__data">
+          <ul class="person__data">
             <li>
-              <label for="form-name">Имя:</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Введите ваше имя*"
-                id="form-name"
-              />
+              <label for="person-name">Имя:</label>
+              <input type="text" name="name" placeholder="Введите ваше имя*" id="form-name"/>
             </li>
             <li>
               <label for="form-surname">Фамилия:</label>
-              <input
-                type="text"
-                name="surname"
-                placeholder="Укажите фамилию*"
-                id="form-surname"
-              />
+              <input type="text" name="surname" placeholder="Укажите фамилию*" id="form-surname"/>
             </li>
             <li>
               <label for="form-father">Отчество:</label>
-              <input
-                type="text"
-                name="father"
-                placeholder="Отчество, если желаете"
-                id="form-father"
-              />
+              <input type="text" name="father" placeholder="Отчество, если желаете" id="form-father"/>
             </li>
           </ul>
         </fieldset>
@@ -175,13 +148,13 @@
       </form>
     </main>
 
-    <footer class="page-foot">
-      <div class="page-foot__social">
-        <a href="" class="page-foot__social--in"></a>
-        <a href="" class="page-foot__social--fb"></a>
-        <a href="" class="page-foot__social--tw"></a>
-      </div>
-      <div class="page-foot__dev">
+    <footer class="page-footer">
+      <ul class="page-foot__social">
+        <li href="" class="page-foot__social page-footer__social--in"><a href=""></a></li>
+        <li href="" class="page-foot__social page-footer__social--fb"><a href=""></a></li>
+        <li href="" class="page-foot__social page-footer__social--tw"><a href=""></a></li>
+      </ul>
+      <div class="page-footer__dev">
         <p>Разработано</p>
       </div>
     </footer>
