@@ -3,17 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header wrapper">
       <a href="index.html" class="page-header__logo">
-        <img src="page-header__logo-img" alt="Логотип Мишка" />
+        <img
+          src="img/logo-mobile.svg"
+          alt="Логотип Мишка"
+          width="86px"
+          height="35"
+        />
       </a>
+      <div class="page-header__burger"></div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a href="form-order.html">Вязание на заказ</a>
@@ -29,11 +38,11 @@
       </nav>
     </header>
 
-    <main class="page-main catalog">
-      <h2 class="page-main__heading">Каталог товаров</h2>
+    <main class="page-main catalog wrapper">
+      <h2 class="catalog__heading">Каталог товаров</h2>
       <ul class="catalog__item about-item">
         <li class="about-item__rew details">
-          <img src="" alt="" />
+          <img src="img/photo-hare-mobile@1x.jpg" alt="" />
           <div class="details__name">
             <h3>Зайчик-попрыгайчик</h3>
             <p>Рост 30см, вес 200г</p>
@@ -44,7 +53,7 @@
           </div>
         </li>
         <li class="about-item__rew details">
-          <img src="" alt="" />
+          <img src="img/photo-bowl-mobile@1x.jpg" alt="" />
           <div class="details__name">
             <h3>Корзинка для белья</h3>
             <p>Диаметр 15 см, высота 10 см</p>
@@ -55,7 +64,7 @@
           </div>
         </li>
         <li class="about-item__rew details">
-          <img src="" alt="" />
+          <img src="img/photo-toys-mobile@1x.jpg" alt="" />
           <div class="details__name">
             <h3>Большая корзинка для игрушек</h3>
             <p>Диаметр 30 см, высота 30 см</p>
@@ -78,11 +87,17 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <ul class="page-foot__social">
-        <li href="" class="page-foot__social page-footer__social--in"><a href=""></a></li>
-        <li href="" class="page-foot__social page-footer__social--fb"><a href=""></a></li>
-        <li href="" class="page-foot__social page-footer__social--tw"><a href=""></a></li>
+    <footer class="page-footer wrapper">
+      <ul class="page-footer__social container">
+        <li href="" class="page-foot__social page-footer__social--in">
+          <a href=""></a>
+        </li>
+        <li href="" class="page-foot__social page-footer__social--fb">
+          <a href=""></a>
+        </li>
+        <li href="" class="page-foot__social page-footer__social--tw">
+          <a href=""></a>
+        </li>
       </ul>
       <div class="page-footer__dev">
         <p>Разработано</p>
