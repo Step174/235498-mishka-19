@@ -5,9 +5,10 @@
 .page-footer__social {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
+  border-bottom: 1px solid #ddd8d8;
   li {
     display: inline-block;
     width: 22px;
@@ -25,14 +26,24 @@
 }
 
 .page-footer__dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
   p {
-    padding-top: 28px;
-    padding-bottom: 31px;
-    padding-left: 69px;
+    display: block;
+    margin-right: 30px;
     font-family: @openSans;
     font-size: 19px;
     font-weight: bold;
     line-height: 0.95;
     color: #000000;
   }
+}
+
+.page-footer__dev a {
+  width: 27px;
+  height: 34px;
+  background-image: url(../img/logo-htmlacademy.svg);
 }
