@@ -1,7 +1,7 @@
 .details__name {
   width: 204px;
   margin: 0 auto;
-  border-bottom: 1px solid #ececec;
+
 
   h3 {
     margin: 0;
@@ -26,6 +26,7 @@
   justify-content: space-between;
   width: 204px;
   margin: 0 auto;
+  border-top: 1px solid #ececec;
 
   p {
     margin-top: 27px;
@@ -45,4 +46,13 @@
 
 .details__price path {
   fill: #cfcccc;
+}
+
+@media (min-width: @tablet-width) {
+  .details__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 }

@@ -11,7 +11,9 @@
 
 .site-list__item a {
   display: inline-block;
-  padding: 28px 23%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 60px;
   vertical-align: middle;
   text-decoration: none;
   font-family: @openSans;
@@ -19,6 +21,14 @@
   font-weight: bold;
   line-height: 1.41;
   color: #000000;
+}
+
+.site-list__item a:hover {
+  opacity: 0.6;
+}
+
+.site-list__item a:active {
+  opacity: 0.3;
 }
 
 .site-list__item--search {
@@ -41,10 +51,6 @@
   }
 }
 
-.site-list__item--basket a {
-  padding: 28px 15% 26px 23.75%;
-}
-
 .main-nav__list--delivery {
   display: none;
   margin: 0;
@@ -59,73 +65,63 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
-  }
-
-  .main-nav__left {
-    display: flex;
     flex-wrap: wrap;
-    width: 372px;
+    justify-content: space-between;
+    z-index: 10;
   }
 
   .main-nav__list {
     display: flex;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
 
     li {
       box-shadow: none;
     }
   }
 
+  .main-nav__list--left {
+    order: 2;
+  }
+
+  .main-nav__list--right {
+    justify-content: flex-end;
+    width: 397px;
+    height: 88px;
+  }
+
   .site-list__item a {
-    font-size: 15px;
     padding: 0;
+    font-size: 15px;
   }
 
   .site-list__item--catalog {
-    padding-top: 24px;
-    padding-left: 52px;
-  }
-  .site-list__item--order {
-    padding-top: 24px;
-    padding-left: 37px;
-  }
-
-  .main-nav__right {
-    width: 399px;
-
-    .main-nav__list {
-      height: 88px;
-      border-bottom: 1px solid #f1f1f1;
-    }
-  }
-
-  .main-nav__list--background {
-    width: 100%;
-    background-color: #f8f8f8;
-  }
-
-  .site-list__item--search {
-    width: 88px;
-    height: 88px;
-    border-left: 1px solid #f1f1f1;
-    border-right: 1px solid #f1f1f1;
-
-    a {
-      font-size: 0;
-    }
+    margin-right: 37px;
   }
 
   .site-list__item--basket {
-    width: 100%;
-    a {
-      padding-top: 30px;
+      padding-top: 36px;
+      padding-bottom: 33px;
       padding-left: 83px;
+      border-left: 1px solid #ececec;
       font-size: 17px;
     }
-  }
+
+
+  .site-list__item--search {
+    width: 82px;
+      border-left: 1px solid #ececec;
+       a {
+        font-size: 0;
+       }
+    }
+
 
   .main-nav__list--delivery {
     display: block;
-    width: ;
-    background-color: #f8f8f8;
+    order: 3;
+    padding: 0;
+    z-index: 10;
   }
 }

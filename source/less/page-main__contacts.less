@@ -1,4 +1,10 @@
-.address__heading {
+.page-main__contacts {
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.contacts__heading {
   padding-top: 44px;
   padding-bottom: 42px;
   font-family: @openSans;
@@ -8,43 +14,91 @@
   color: #000000;
 }
 
-.address__table td {
-  min-width: 48px;
-  padding: 0;
-  vertical-align: top;
-}
-
-.address__table {
+.contacts__info {
   margin-bottom: 42px;
 }
 
-.table__mail td:first-child {
-  padding-bottom: 30px;
-  padding-right: 30px;
+.info__mail,
+.info__city {
+  margin: 0;
+  padding: 0;
 }
 
-.table__mail {
+.contacts__info li {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
   font-family: @openSans;
   font-size: 15px;
   line-height: 2;
   color: #444444;
-
-  a {
-    text-decoration-color: #63d1bb;
-    color: #444444;
-  }
 }
 
-.table__city {
-  font-family: @openSans;
-  font-size: 15px;
+.contacts__info a {
+  text-decoration: none;
   color: #444444;
+  text-decoration: underline;
+  text-decoration-color: #63d1bb;
 }
 
-.address__map img {
-  margin-bottom: 39px;
+.info__mail--cell,
+.info__city--cell {
+  margin-right: 28px;
+}
+
+.info__mail--parametr,
+.info__city--patrametr {
+  width: 178px;
+}
+
+.address__map {
+  display: block;
+  margin-bottom: 55px;
 }
 
 .address__write {
-  margin-bottom: 39px;
+  margin-bottom: 57px;
+}
+
+
+@media (min-width: @tablet-width) {
+.page-main__contacts {
+   background-image: url(../img/bg-zigzag-line.svg);
+   background-repeat: repeat-x;
+   background-size: 768px 20px;
+   background-position: 20px 0;
+}
+
+  .contacts__heading {
+    position: relative;
+    padding-top: 72px;
+    font-size: 43px;
+    line-height: 1.16;
+
+    &::after {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 60px;
+      right: 0;
+    }
+  }
+
+.contacts__info {
+  display: flex;
+}
+
+.contacts__info li {
+  font-size: 17px;
+  line-height: 1.76;
+}
+
+.info__mail {
+  margin-right: 55px;
+}
+
+.info__mail--parametr,
+.info__city--patrametr {
+  width: 219px;
+}
+
 }
