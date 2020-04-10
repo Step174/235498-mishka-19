@@ -15,7 +15,7 @@
   line-height: 1.41;
 
   &::before {
-    content: url"(../img/icon-video.svg)";
+    content: url("../img/icon-video.svg");
     position: absolute;
     top: 5px;
     left: -60px;
@@ -50,4 +50,37 @@
 .production__order {
   width: 192px;
   margin-bottom: 33px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__process {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 63px;
+  }
+
+  .production__heading {
+    order: 1;
+    margin: 0;
+    margin-bottom: 41px;
+    margin-left: 107px;
+    font-size: 20px;
+  }
+
+  .production__video {
+    margin-bottom: 43px;
+  }
+
+  .production__stateman {
+    order: 2;
+    width: 581px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .production__order {
+    order: 3;
+    width: 584px;
+    margin-bottom: 45px;
+  }
 }
