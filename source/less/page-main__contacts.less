@@ -1,5 +1,5 @@
 .page-main__contacts {
-  background-image: url(../img/bg-zigzag-line.svg);
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -37,7 +37,6 @@
 .contacts__info a {
   text-decoration: none;
   color: #444444;
-  text-decoration: underline;
   text-decoration-color: #63d1bb;
 }
 
@@ -60,14 +59,13 @@
   margin-bottom: 57px;
 }
 
-
 @media (min-width: @tablet-width) {
-.page-main__contacts {
-   background-image: url(../img/bg-zigzag-line.svg);
-   background-repeat: repeat-x;
-   background-size: 768px 20px;
-   background-position: 20px 0;
-}
+  .page-main__contacts {
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 20px;
+    background-position: 20px 0;
+  }
 
   .contacts__heading {
     position: relative;
@@ -83,22 +81,21 @@
     }
   }
 
-.contacts__info {
-  display: flex;
-}
+  .contacts__info {
+    display: flex;
+  }
 
-.contacts__info li {
-  font-size: 17px;
-  line-height: 1.76;
-}
+  .contacts__info li {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 
-.info__mail {
-  margin-right: 55px;
-}
+  .info__mail {
+    margin-right: 55px;
+  }
 
-.info__mail--parametr,
-.info__city--patrametr {
-  width: 219px;
-}
-
+  .info__mail--parametr,
+  .info__city--patrametr {
+    width: 219px;
+  }
 }

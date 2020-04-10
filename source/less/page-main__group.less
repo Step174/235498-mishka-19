@@ -7,6 +7,7 @@
 .category__item {
   list-style: none;
   background-color: #63d1bb;
+
   a {
     display: block;
     width: 106px;
@@ -21,7 +22,8 @@
 }
 
 .category__item--interier {
-position: relative;
+  position: relative;
+
   &::after {
     content: url("../img/icon-interior.svg");
     position: absolute;
@@ -30,20 +32,16 @@ position: relative;
   }
 }
 
-
-
 .category__item--game {
   position: relative;
-    &::after {
-      content: url("../img/icon-toy.svg");
-      position: absolute;
-      top: 15px;
-      right: 36px;
-    }
-  }
-
-.category__item--game {
   background-color: #56c3b2;
+
+  &::after {
+    content: url("../img/icon-toy.svg");
+    position: absolute;
+    top: 15px;
+    right: 36px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -64,7 +62,6 @@ position: relative;
       padding-bottom: 40px;
     }
   }
-
 
   .category__item:hover {
     transform: translateY(-10px);
