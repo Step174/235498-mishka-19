@@ -1,0 +1,35 @@
+.form-list__text {
+  margin-bottom: 18px;
+}
+
+.form-list__text legend {
+  margin-bottom: 23px;
+}
+
+.text__comment textarea {
+  width: 260px;
+  height: 118px;
+  border: 2px solid #000000;
+
+
+  &::placeholder {
+    padding-top: 18px;
+    padding-left: 17px;
+    font-family: @openSans;
+    font-size: 17px;
+    line-height: 1.06;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-list__text {
+    margin-bottom: 50px;
+  }
+
+  .form-list__text textarea {
+    width: 501px;
+    min-height: 142px;
+    margin-left: 162px;
+  }
+}

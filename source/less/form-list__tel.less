@@ -1,0 +1,39 @@
+.form-list__tel {
+  margin-bottom: 34px;
+}
+
+.form-list__tel legend {
+  margin-bottom: 25px;
+}
+
+.tel__number input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  &::placeholder {
+    font-family: @openSans;
+    font-size: 19px;
+    line-height: 0.95;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-background-tel-mail {
+    background-color: #f1f1f1;
+    margin-bottom: 23px;
+  }
+
+  .form-list__tel {
+    margin-top: 50px;
+  }
+
+  .form-list__tel input {
+    width: 501px;
+    margin-left: 162px;
+    background-color: #f1f1f1;
+  }
+}

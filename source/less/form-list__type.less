@@ -1,0 +1,50 @@
+.form-list__type {
+  margin-bottom: 27px;
+}
+
+.form-list__type legend {
+  margin-bottom: 27px;
+}
+
+.form-list__radio li {
+  margin-bottom: 25px;
+}
+
+.form-list__radio label {
+  position: relative;
+  padding-left: 58px;
+}
+
+.form-list__radio input[type="radio"] + label::before {
+  content: url(../img/radio-off.svg);
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #444444;
+  left: 0;
+  top: -9px;
+}
+
+.form-list__radio input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  top: 3px;
+  background-color: #63d1bb;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .form-list__type {
+    margin-bottom: 0;
+  }
+
+  .form-list__type label {
+    width: 260px;
+    margin-bottom: 23px;
+  }
+}

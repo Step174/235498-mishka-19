@@ -1,0 +1,53 @@
+.form-list__color {
+  margin-bottom: 23px;
+}
+
+.form-list__color legend {
+  margin-bottom: 23px;
+}
+
+.color__check li {
+  margin-bottom: 46px;
+}
+
+.form-list__color label {
+  position: relative;
+  padding-left: 58px;
+}
+
+.form-list__color input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  border: 2px solid #444444;
+  left: 0;
+  top: -11px;
+}
+
+.form-list__color input[type="checkbox"]:checked + label::after {
+  content: url("../img/icon-tick.svg");
+  position: absolute;
+  left: 5px;
+  top: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-background-color {
+    background-color: #f1f1f1;
+    margin-bottom: 69px;
+  }
+
+  .form-list__color {
+    margin-bottom: 0;
+  }
+
+  .form-list__color legend {
+    position: absolute;
+    top: 60px;
+  }
+
+  .form-list__color ul {
+    margin-top: 60px;
+  }
+}
