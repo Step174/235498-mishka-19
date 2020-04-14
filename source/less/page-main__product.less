@@ -51,6 +51,15 @@
   }
 }
 
+.about-product__list td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &:first-child {
+    padding-right: 30px;
+  }
+}
+
 .about-products__price {
   width: 260px;
   margin: 0 auto;
@@ -61,10 +70,6 @@
   text-align: center;
   line-height: 1.41;
   color: #000000;
-}
-
-.about-products__order {
-
 }
 
 @media (min-width: @tablet-width) {
@@ -95,7 +100,7 @@
     text-align: center;
   }
 
-  .about-priduct__shell {
+  .about-product__shell {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,8 +108,6 @@
 
     picture {
       position: absolute;
-      width: 333px;
-      height: 404px;
       top: 0;
       right: 0;
     }
@@ -125,10 +128,59 @@
 
   .about-products__price {
     margin-left: 10px;
-    margin-bottom: 54px;
   }
 
   .about-products__order {
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__product {
+    background-size: auto 20px;
+  }
+
+  .product-wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .about-product__heading {
+    margin-left: 58px;
+    font-size: 53px;
+    line-height: 1.08;
+    text-align: left;
+    z-index: 111;
+  }
+
+  .about-product__special {
+    margin-left: 37px;
+  }
+
+  .about-product__shell {
+    width: 875px;
+    margin: 0;
+    margin-left: auto;
+    picture {
+      top: -150px;
+      right: 0;
+    }
+  }
+
+  .about-product__description {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .about-product__list {
+    margin-bottom: 110px;
+  }
+
+  .about-products__price {
+    margin-bottom: 48px;
+  }
+
+  .about-products__order {
+    margin-bottom: 70px;
   }
 }

@@ -50,6 +50,10 @@
   width: 178px;
 }
 
+.info__mail--parametr {
+  text-decoration: underline;
+}
+
 .address__map {
   display: block;
   margin-bottom: 55px;
@@ -97,5 +101,48 @@
   .info__mail--parametr,
   .info__city--patrametr {
     width: 219px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: auto 20px;
+  }
+
+  .contacts__heading {
+    width: 668px;
+    margin-top: 60px;
+    font-size: 53px;
+
+    &::after {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 60px;
+      left: -130px;
+    }
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin-bottom: 65px;
+  }
+
+  .info__mail {
+    margin-bottom: 30px;
+  }
+
+  .address__map {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+
+  .address__write {
+    margin-left: 240px;
   }
 }

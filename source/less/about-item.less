@@ -20,3 +20,23 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .catalog__item {
+    display: flex;
+  }
+
+  .about-item__rew {
+    flex-direction: column;
+    margin-right: 52px;
+
+    picture {
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  .about-item__rew:nth-child(3n) {
+    margin-right: 0;
+  }
+}
