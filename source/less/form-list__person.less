@@ -1,0 +1,56 @@
+.person__data {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.form-list__person legend {
+  margin-bottom: 33px;
+}
+
+.person__data li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.person__data input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  &::placeholder {
+    font-family: @openSans;
+    font-size: 17px;
+    line-height: 1.06;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .person__data {
+    flex-direction: column;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .person__data label {
+    width: auto;
+  }
+
+  .person__data input {
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-list__person {
+    width: 900px;
+  }
+}

@@ -22,15 +22,28 @@
 
 .form-order__list fieldset {
   border: none;
+  padding: 0;
 }
 
 .form-order__list legend {
-  margin-bottom: 33px;
+  position: relative;
   font-family: @openSans;
   font-size: 17px;
+  text-transform: uppercase;
   font-weight: bold;
   line-height: 0.94;
   color: #63d1bb;
+}
+
+.form-order__list legend::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  width: 200px;
+  height: 2px;
+  transform: translateY(-1px);
+  background-color: #63d1bb;
 }
 
 .form-order__list ul {
@@ -38,44 +51,16 @@
 }
 
 .form-order__list li {
-  margin-bottom: 24px;
   list-style: none;
 }
 
 .form-order__list label {
+  display: block;
+  width: 160px;
   font-family: @openSans;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
-}
-
-.person__data li {
-  display: flex;
-  flex-direction: column;
-}
-
-.person__data input,
-.tel__number input,
-.mail__adres input {
-  border: none;
-  border-bottom: 2px solid #000000;
-}
-
-.form-list__text {
-  margin-bottom: 18px;
-}
-
-.text__comment textarea {
-  width: 260px;
-  border: 2px solid #000000;
-}
-
-.form-list__person li {
-  margin-bottom: 22px;
-}
-
-.form-list__person label {
-  margin-bottom: 18px;
 }
 
 .form-list__p {
@@ -87,4 +72,84 @@
 
 .form-list__send {
   margin-bottom: 55px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__heading {
+    margin-bottom: 79px;
+    padding-top: 106px;
+    padding-bottom: 78px;
+    font-size: 43px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 102%;
+    background-size: 668px 25px;
+  }
+
+  .form-order__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-order__list ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 501px;
+    margin-left: auto;
+  }
+
+  .form-order__list fieldset {
+    position: relative;
+  }
+
+  .form-order__list legend {
+    position: absolute;
+    top: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-order__list label {
+    font-size: 19px;
+  }
+
+  .form-order__about {
+    margin-bottom: 61px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .form-list__wrapper {
+    display: flex;
+  }
+
+  .form-list__p {
+    order: 1;
+  }
+
+  .form-list__send {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-order__heading {
+    font-size: 53px;
+    line-height: 1.08;
+    background-size: auto 25px;
+  }
+
+  .form-order__about {
+    width: 700px;
+  }
+
+  .form-order__list ul {
+    margin-left: 110px;
+  }
+
+  .form-list__wrapper {
+    width: 700px;
+  }
 }

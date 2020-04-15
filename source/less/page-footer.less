@@ -2,23 +2,23 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social {
   display: flex;
   justify-content: center;
-  width: 260px;
   margin: 0 auto;
   padding: 0;
   border-bottom: 1px solid #ddd8d8;
 
   li {
     display: inline-block;
-    width: 22px;
-    height: 21px;
     margin-top: 30px;
     margin-bottom: 29px;
     margin-right: 40px;
     list-style: none;
-    background-color: black;
   }
 }
 
@@ -47,5 +47,23 @@
 .page-footer__dev a {
   width: 27px;
   height: 34px;
-  background-image: "url(../img/logo-htmlacademy.svg)";
+  background-image: url("../img/logo-htmlacademy.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 143px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    border: none;
+  }
 }

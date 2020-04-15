@@ -1,0 +1,160 @@
+.about-product__heading {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: @openSans;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.about-product__special {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: @openSans;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.18;
+  color: #63d1bb;
+}
+
+.about-product__description {
+  padding-bottom: 34px;
+  font-family: @openSans;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-product__list {
+  padding-bottom: 28px;
+
+  tr {
+    display: block;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+.about-product__list td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &:first-child {
+    padding-right: 30px;
+  }
+}
+
+.about-products__price {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  font-family: @openSans;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.41;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  .about-product__heading {
+    font-size: 43px;
+    text-align: left;
+  }
+
+  .about-product__special {
+    width: 70px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .about-product__shell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .about-product__description {
+    width: 292px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 54px;
+  }
+
+  .about-product__list {
+    width: 292px;
+    padding: 0;
+    margin-bottom: 59px;
+  }
+
+  .about-products__price {
+    margin-left: 10px;
+  }
+
+  .about-products__order {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .about-product__heading {
+    margin-left: 58px;
+    font-size: 53px;
+    line-height: 1.08;
+    text-align: left;
+    z-index: 111;
+  }
+
+  .about-product__special {
+    margin-left: 37px;
+  }
+
+  .about-product__shell {
+    width: 875px;
+    margin: 0;
+    margin-left: auto;
+
+    picture {
+      top: -150px;
+      right: 0;
+    }
+  }
+
+  .about-product__description {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .about-product__list {
+    margin-bottom: 110px;
+  }
+
+  .about-products__price {
+    margin-bottom: 48px;
+  }
+
+  .about-products__order {
+    margin-bottom: 70px;
+  }
+}

@@ -8,3 +8,35 @@
     height: auto;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .about-item__rew {
+    display: flex;
+    margin-bottom: 54px;
+
+    picture {
+      height: 334px;
+      margin-right: 26px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__item {
+    display: flex;
+  }
+
+  .about-item__rew {
+    flex-direction: column;
+    margin-right: 52px;
+
+    picture {
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  .about-item__rew:nth-child(3n) {
+    margin-right: 0;
+  }
+}

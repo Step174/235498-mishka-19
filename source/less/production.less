@@ -1,0 +1,129 @@
+.production {
+  margin-bottom: 58px;
+  border: 1px solid #ececec;
+}
+
+.production__heading {
+  position: relative;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 26px;
+  margin-left: 90px;
+  font-family: @openSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+
+  &::before {
+    content: url("../img/icon-video.svg");
+    position: absolute;
+    top: 5px;
+    left: -60px;
+  }
+}
+
+.production__video {
+  position: relative;
+
+  a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50px) translateY(-33px);
+    display: block;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/icon-play.svg");
+  }
+}
+
+.production__stateman {
+  width: 192px;
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 24px;
+  font-family: @openSans;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.production__order {
+  width: 192px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: @tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 63px;
+  }
+
+  .production__heading {
+    order: 2;
+    margin: 0;
+    margin-bottom: 41px;
+    margin-left: 107px;
+    font-size: 20px;
+  }
+
+  .production__video {
+    margin-bottom: 43px;
+  }
+
+  .production-wrapper {
+    order: 3;
+  }
+
+  .production__stateman {
+    width: 581px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .production__order {
+    width: 584px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .production__heading {
+    width: 150px;
+    margin: 0;
+    margin-top: 70px;
+    margin-right: auto;
+
+    &::before {
+      top: -50px;
+      left: 0;
+    }
+  }
+
+  .production__video {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .production-wrapper {
+    width: 230px;
+    margin-top: -300px;
+    margin-right: 30px;
+  }
+
+  .production__stateman {
+    width: 222px;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .production__order {
+    width: 230px;
+  }
+}

@@ -1,0 +1,104 @@
+.category {
+  width: 100%;
+  margin-bottom: 34px;
+  padding: 0;
+}
+
+.category__item {
+  list-style: none;
+  background-color: #63d1bb;
+
+  a {
+    display: block;
+    width: 106px;
+    padding-top: 35px;
+    padding-bottom: 34px;
+    padding-left: 37px;
+    text-decoration: none;
+    font-family: @openSans;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.26;
+    color: #ffffff;
+  }
+}
+
+.category__item--interier::after {
+  content: url("../img/icon-interior.svg");
+}
+
+.category__item--game {
+  position: relative;
+  background-color: #56c3b2;
+
+  &::after {
+    content: url("../img/icon-toy.svg");
+  }
+}
+
+.category__item--interier,
+.category__item--game {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 36px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .category {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 668px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position-x: 50%;
+      background-size: 768px 25px;
+    }
+  }
+
+  .category__item {
+    width: 100%;
+
+    a {
+      padding-bottom: 40px;
+    }
+  }
+
+  .category__item:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+  }
+
+  .category__item--interier {
+    background-position-x: 3%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__group {
+    width: 1050px;
+    margin-bottom: 117px;
+
+    &::after {
+      background-size: auto 36px;
+    }
+  }
+
+  .category__item {
+    a {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}

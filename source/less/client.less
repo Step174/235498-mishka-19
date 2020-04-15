@@ -1,0 +1,147 @@
+.client__heading {
+  padding-bottom: 38px;
+  font-family: @openSans;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.user-review {
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.user-review__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: @openSans;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.user-review__name {
+  font-family: @openSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+}
+
+.user-review__mail {
+  font-family: @openSans;
+  font-size: 17px;
+  line-height: 1.76;
+}
+
+.arrow {
+  display: flex;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.arrow__left {
+  position: relative;
+  display: block;
+  width: 128px;
+  height: 50px;
+  border: solid 1px #ececec;
+
+  img {
+    position: absolute;
+    top: 12px;
+    left: 40px;
+  }
+}
+
+.arrow__left:hover img,
+.arrow__right:hover img {
+  opacity: 0.6;
+}
+
+.arrow__left:active img,
+.arrow__right:active img {
+  opacity: 0.3;
+}
+
+.arrow__right {
+  position: relative;
+  display: block;
+  width: 128px;
+  height: 50px;
+  border: solid 1px #ececec;
+
+  img {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+  }
+}
+
+.client__write {
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .client {
+    position: relative;
+    min-height: 487px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .client__heading {
+    font-size: 43px;
+    padding-top: 75px;
+  }
+
+  .client__user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-review__text {
+    width: 644px;
+    margin-bottom: 58px;
+    font-size: 17px;
+  }
+
+  .user-review__name {
+    margin: 0;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 75px;
+    right: 52px;
+    margin: 0;
+  }
+
+  .arrow__left,
+  .arrow__right {
+    border: none;
+  }
+
+  .client__write {
+    position: absolute;
+    top: 70px;
+    right: 52px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .client {
+    margin-bottom: 67px;
+  }
+
+  .client__heading {
+    width: 668px;
+  }
+
+  .client__user {
+    width: 668px;
+  }
+}
