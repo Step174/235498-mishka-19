@@ -1,6 +1,6 @@
 .about-product__heading {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-family: @openSans;
   font-size: 25px;
   font-weight: bold;
@@ -11,7 +11,7 @@
 
 .about-product__special {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-family: @openSans;
   font-size: 17px;
   font-weight: bold;
@@ -22,34 +22,53 @@
 }
 
 .about-product__description {
-  padding-bottom: 34px;
+  padding-bottom: 5px;
   font-family: @openSans;
   font-size: 15px;
   line-height: 1.6;
 }
 
 .about-product__list {
-  padding-bottom: 28px;
+  margin-left: -5px;
+  padding-bottom: 25px;
 
   tr {
     display: block;
+    margin-bottom: 3px;
     border-bottom: 1px solid lightgray;
   }
 }
 
 .about-product__list td {
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
+  font-family: @openSans;
+  font-size: 15px;
+  line-height: 1.33;
+}
 
-  &:first-child {
-    padding-right: 30px;
-  }
+.character__color td:first-child {
+  padding-right: 54px;
+}
+
+.character__diameter td:first-child {
+  padding-right: 26px;
+}
+
+.character__heading td:first-child {
+  padding-right: 39px;
+}
+
+.about-product img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .about-products__price {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-family: @openSans;
   font-size: 17px;
   font-weight: bold;
@@ -57,6 +76,7 @@
   line-height: 1.41;
   color: #000000;
 }
+
 
 @media (min-width: @tablet-width) {
   .product-wrapper {

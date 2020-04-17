@@ -1,5 +1,5 @@
 .about-us__heading {
-  padding-top: 34px;
+  padding-top: 33px;
   font-family: @openSans;
   font-size: 25px;
   font-weight: bold;
@@ -9,14 +9,15 @@
 }
 
 .about-us__list {
-  width: 260px;
-  margin: 0 auto;
-  margin-bottom: 61px;
+  width: 200px;
+  margin-left: 0;
+  margin-bottom: 55px;
   padding: 0;
 
   li {
     position: relative;
-    padding-top: 85px;
+    padding-top: 65px;
+    margin-bottom: 18px;
     list-style: none;
     font-family: @openSans;
     font-size: 17px;
@@ -27,9 +28,13 @@
 
 .about-us__list li::before {
   position: absolute;
-  top: 25px;
+  top: 10px;
+  left: 6px;
 }
 
+.about-us__list--eco {
+  width: 197px;
+}
 .about-us__list--eco::before {
   content: url("../img/icon-feature-flower.svg");
 }
@@ -42,10 +47,16 @@
   content: url("../img/icon-feature-heart.svg");
 }
 
+.about-us__list--hand {
+  width: 210px;
+}
 .about-us__list--hand::before {
   content: url("../img/icon-feature-ball.svg");
 }
 
+.about-us__list--support {
+  width: 250px;
+}
 .about-us__list--support::before {
   content: url("../img/icon-feature-rocket.svg");
 }

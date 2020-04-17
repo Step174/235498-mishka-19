@@ -13,7 +13,7 @@
   display: inline-block;
   padding-top: 28px;
   padding-bottom: 28px;
-  padding-left: 60px;
+  padding-left: 45px;
   vertical-align: middle;
   text-decoration: none;
   font-family: @openSans;
@@ -31,25 +31,22 @@
   opacity: 0.3;
 }
 
-.site-list__item--search {
-  position: relative;
-
-  &::before {
-    content: url("../img/icon-search.svg");
-    position: absolute;
-    top: 35px;
-    left: 30px;
-  }
+.site-list__item--search::before {
+  content: url("../img/icon-search.svg");
 }
 
+.site-list__item--basket::before {
+  content: url("../img/icon-cart.svg");
+}
+
+.site-list__item--search,
 .site-list__item--basket {
   position: relative;
 
   &::before {
-    content: url("../img/icon-cart.svg");
     position: absolute;
     top: 35px;
-    left: 30px;
+    left: 0;
   }
 }
 
