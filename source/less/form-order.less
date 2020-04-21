@@ -1,6 +1,6 @@
 .form-order__heading {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-top: 74px;
   padding-bottom: 73px;
   font-family: @openSans;
@@ -13,7 +13,7 @@
 }
 
 .form-order__about {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-family: @openSans;
   font-size: 13px;
   line-height: 1.85;
@@ -39,9 +39,9 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: 60px;
-  width: 200px;
-  height: 2px;
+  left: 62px;
+  width: 198px;
+  height: 1px;
   transform: translateY(-1px);
   background-color: #63d1bb;
 }
@@ -64,21 +64,24 @@
 }
 
 .form-list__p {
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 32px;
   font-family: @openSans;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .form-list__send {
+  width: 260px;
   margin-bottom: 55px;
+  background-color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
   .form-order__heading {
-    margin-bottom: 79px;
-    padding-top: 106px;
-    padding-bottom: 78px;
+    margin-bottom: 65px;
+    padding-top: 96px;
+    padding-bottom: 90px;
     font-size: 43px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -94,8 +97,10 @@
   .form-order__list ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 501px;
     margin-left: auto;
+    margin-bottom: 0;
   }
 
   .form-order__list fieldset {
@@ -116,7 +121,7 @@
   }
 
   .form-order__about {
-    margin-bottom: 61px;
+    margin-bottom: 55px;
     font-size: 17px;
     line-height: 1.76;
   }
@@ -127,15 +132,26 @@
 
   .form-list__p {
     order: 1;
+    margin-top: 8px;
+    font-size: 17px;
+    line-height: 1.76;
   }
 
   .form-list__send {
+    width: 230px;
     margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form-order {
+    margin-bottom: 48px;
+  }
+
   .form-order__heading {
+    margin-bottom: 115px;
+    padding-top: 93px;
+    padding-bottom: 110px;
     font-size: 53px;
     line-height: 1.08;
     background-size: auto 25px;
@@ -149,7 +165,25 @@
     margin-left: 110px;
   }
 
+  .form-order__list .person__data {
+    width: 700px;
+    margin-left: 115px;
+  }
+
+  .form-order__list label {
+    width: 120px;
+  }
+
   .form-list__wrapper {
     width: 700px;
+  }
+
+  .form-list__p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .form-list__send {
+    margin-bottom: 0;
   }
 }

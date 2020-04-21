@@ -1,9 +1,9 @@
 .form-list__type {
-  margin-bottom: 27px;
+  margin-bottom: 17px;
 }
 
 .form-list__type legend {
-  margin-bottom: 27px;
+  margin-bottom: 18px;
 }
 
 .form-list__radio li {
@@ -12,7 +12,7 @@
 
 .form-list__radio label {
   position: relative;
-  padding-left: 58px;
+  padding-left: 64px;
 }
 
 .form-list__radio input[type="radio"] + label::before {
@@ -39,17 +39,40 @@
 
 @media (min-width: @tablet-width) {
   .form-list__type {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .form-list__type label {
     width: 260px;
     margin-bottom: 23px;
   }
+
+  .form-list__radio li {
+    margin-bottom: 34px;
+  }
+
+  .form-list__radio label {
+    padding-left: 80px;
+  }
+
+  .form-list__radio input[type="radio"] + label::before {
+    width: 48px;
+    height: 48px;
+    left: 0;
+    top: -11px;
+  }
+
+  .form-list__radio input[type="radio"]:checked + label::after {
+    width: 22px;
+    height: 22px;
+    left: 15px;
+    top: 3px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-list__type {
     width: 900px;
+    margin-left: 115px;
   }
 }

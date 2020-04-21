@@ -1,9 +1,9 @@
 .form-list__mail {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .form-list__mail legend {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .mail__adres input {
@@ -12,13 +12,27 @@
   border-bottom: 2px solid #000000;
   padding-top: 17px;
   padding-bottom: 17px;
+  font-size: 17px;
 
   &::placeholder {
     font-family: @openSans;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 0.95;
     color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.form-list__mail legend::after {
+  left: 80px;
+  width: 180px;
+}
+
+.mail__adres::after {
+  content: url("../img/icon-mail.svg");
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,11 +44,36 @@
     width: 501px;
     margin-left: 162px;
     background-color: #f1f1f1;
+
+    &::placeholder {
+      font-size: 19px;
+      padding-left: 22px;
+    }
+  }
+
+  .mail__adres::after {
+    top: 13px;
+    right: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-list__mail {
     width: 900px;
+    margin-left: 112px;
+  }
+
+  .form-list__mail input {
+    width: 700px;
+    margin-left: 113px;
+
+    &::placeholder {
+      padding-left: 18px;
+    }
+  }
+
+  .mail__adres::after {
+    top: 13px;
+    right: 92px;
   }
 }

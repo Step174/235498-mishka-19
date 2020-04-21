@@ -1,14 +1,14 @@
 .form-list__text {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .form-list__text legend {
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 
 .text__comment textarea {
-  width: 260px;
-  height: 118px;
+  width: 254px;
+  min-height: 135px;
   border: 2px solid #000000;
 
   &::placeholder {
@@ -21,20 +21,37 @@
   }
 }
 
+.form-list__text legend::after {
+  left: 68px;
+  width: 196px;
+}
+
 @media (min-width: @tablet-width) {
   .form-list__text {
     margin-bottom: 50px;
   }
 
+  .form-list__text legend {
+    margin-left: 3px;
+  }
+
   .form-list__text textarea {
-    width: 501px;
-    min-height: 142px;
-    margin-left: 162px;
+    width: 494px;
+    min-height: 135px;
+    margin-top: 2px;
+    margin-left: 168px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-list__text {
     width: 900px;
+    margin-bottom: 45px;
+    margin-left: 112px;
+  }
+
+  .form-list__text textarea {
+    width: 694px;
+    margin-left: 112px;
   }
 }

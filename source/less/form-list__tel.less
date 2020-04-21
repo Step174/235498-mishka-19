@@ -1,9 +1,13 @@
 .form-list__tel {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .form-list__tel legend {
-  margin-bottom: 25px;
+  margin-bottom: 6px;
+}
+
+.tel__number {
+  position: relative;
 }
 
 .tel__number input {
@@ -21,25 +25,58 @@
   }
 }
 
+.tel__number::after {
+  content: url("../img/icon-phone.svg");
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  opacity: 0.2;
+}
+
 @media (min-width: @tablet-width) {
   .form-background-tel-mail {
     background-color: #f1f1f1;
-    margin-bottom: 23px;
+    margin-bottom: 47px;
   }
 
   .form-list__tel {
     margin-top: 50px;
+    margin-bottom: 22px;
   }
 
   .form-list__tel input {
     width: 501px;
     margin-left: 162px;
     background-color: #f1f1f1;
+
+    &::placeholder {
+      padding-left: 22px;
+    }
+  }
+
+  .tel__number::after {
+    top: 13px;
+    right: 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-list__tel {
     width: 900px;
+    margin-left: 112px;
+  }
+
+  .form-list__tel input {
+    width: 700px;
+    margin-left: 113px;
+
+    &::placeholder {
+      padding-left: 18px;
+    }
+  }
+
+  .tel__number::after {
+    top: 13px;
+    right: 96px;
   }
 }

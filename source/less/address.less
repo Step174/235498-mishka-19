@@ -7,14 +7,24 @@
   margin-bottom: 40px;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .address__map {
-    position: absolute;
-    top: 50px;
-    right: 0;
+    margin-bottom: 52px;
   }
 
   .address__write {
-    margin-left: 240px;
+    width: 226px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address__map {
+    position: absolute;
+    top: 95px;
+    right: 50px;
+  }
+
+  .address__write {
+    margin-left: 225px;
   }
 }
