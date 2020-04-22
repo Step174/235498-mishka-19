@@ -22,6 +22,14 @@
   }
 }
 
+.page-footer__social a:hover path {
+  fill: #46c1ae;
+}
+
+.page-footer__social a:active path {
+  opacity: 0.3;
+}
+
 .page-footer__social li:last-child {
   margin-right: 0;
 }
@@ -32,6 +40,7 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 12px;
+  text-decoration: none;
 
   p {
     display: block;
@@ -44,11 +53,14 @@
   }
 }
 
-.page-footer__dev a {
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/logo-htmlacademy.svg");
+.page-footer__dev:hover path {
+  fill: #46c1ae;
 }
+
+.page-footer__dev:active {
+  opacity: 0.3;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
@@ -61,6 +73,15 @@
   .page-footer__logo {
     display: block;
     margin-left: 53px;
+  }
+
+  .page-footer__logo:hover path {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo:active path {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 
   .page-footer__social {
