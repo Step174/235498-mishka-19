@@ -1,5 +1,5 @@
 .about-us__heading {
-  padding-top: 34px;
+  padding-top: 33px;
   font-family: @openSans;
   font-size: 25px;
   font-weight: bold;
@@ -9,71 +9,122 @@
 }
 
 .about-us__list {
-  width: 260px;
-  margin: 0 auto;
-  margin-bottom: 61px;
+  width: 200px;
+  margin-left: 0;
+  margin-bottom: 55px;
   padding: 0;
+}
 
-  li {
-    position: relative;
-    padding-top: 85px;
-    list-style: none;
-    font-family: @openSans;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.18;
+.about-us__list-item {
+  position: relative;
+  padding-top: 65px;
+  margin-bottom: 18px;
+  list-style: none;
+  font-family: @openSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 6px;
   }
 }
 
-.about-us__list li::before {
-  position: absolute;
-  top: 25px;
+.about-us__list-item--eco {
+  width: 197px;
+
+  &::before {
+    content: url("../img/icon-feature-flower.svg");
+  }
 }
 
-.about-us__list--eco::before {
-  content: url("../img/icon-feature-flower.svg");
-}
-
-.about-us__list--style::before {
+.about-us__list-item--style::before {
   content: url("../img/icon-feature-money.svg");
 }
 
-.about-us__list--like::before {
+.about-us__list-item--like::before {
   content: url("../img/icon-feature-heart.svg");
 }
 
-.about-us__list--hand::before {
-  content: url("../img/icon-feature-ball.svg");
+.about-us__list-item--hand {
+  width: 210px;
+
+  &::before {
+    content: url("../img/icon-feature-ball.svg");
+  }
 }
 
-.about-us__list--support::before {
-  content: url("../img/icon-feature-rocket.svg");
+.about-us__list-item--support {
+  width: 250px;
+
+  &::before {
+    content: url("../img/icon-feature-rocket.svg");
+  }
 }
 
-.about-us__list--supply::before {
+.about-us__list-item--supply::before {
   content: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: @tablet-width) {
   .page-main__advantages {
-    margin-bottom: 82px;
+    margin-bottom: 0;
   }
 
   .about-us__heading {
+    margin-left: -3px;
+    padding-top: 62px;
     font-size: 43px;
+    line-height: 1.16;
   }
 
   .about-us__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: flex-start;
     width: 668px;
+    height: 490px;
+    margin-bottom: 15px;
     padding: 0;
+  }
 
-    li {
-      width: 295px;
-      font-size: 20px;
-    }
+  .about-us__list-item {
+    margin-bottom: 46px;
+    font-size: 20px;
+  }
+
+  .about-us__list-item--eco {
+    width: 205px;
+    margin-right: 130px;
+  }
+
+  .about-us__list-item--style {
+    width: 235px;
+  }
+
+  .about-us__list-item--like {
+    width: 215px;
+  }
+
+  .about-us__list-item--hand {
+    width: 250px;
+  }
+
+  .about-us__list-item--support {
+    width: 295px;
+  }
+
+  .about-us__list-item--supply {
+    width: 233px;
+  }
+
+  .about-us__list-item:nth-child(3),
+  .about-us__list-item:nth-child(6) {
+    margin-bottom: 0;
   }
 }
 
@@ -81,7 +132,18 @@
   .about-us__heading {
     width: 668px;
     margin: 0 auto;
-    margin-bottom: 44px;
+    padding-top: 80px;
+    margin-bottom: 35px;
+    margin-left: 170px;
     font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+
+    .about-us__list-item--eco {
+      margin-right: 146px;
+    }
   }
 }

@@ -1,20 +1,30 @@
 .address__map {
   display: block;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .address__write {
-  margin-bottom: 57px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .address__map {
+    margin-bottom: 52px;
+  }
+
+  .address__write {
+    width: 226px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .address__map {
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: 95px;
+    right: 50px;
   }
 
   .address__write {
-    margin-left: 240px;
+    margin-left: 225px;
   }
 }

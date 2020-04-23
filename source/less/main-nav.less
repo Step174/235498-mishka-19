@@ -13,7 +13,7 @@
   display: inline-block;
   padding-top: 28px;
   padding-bottom: 28px;
-  padding-left: 60px;
+  padding-left: 45px;
   vertical-align: middle;
   text-decoration: none;
   font-family: @openSans;
@@ -27,29 +27,33 @@
   opacity: 0.6;
 }
 
-.site-list__item a:active {
+.site-list__item a:hover + svg path {
+  fill: #63d1bb;
+}
+
+.site-list__item--search svg:hover path {
+  fill: #63d1bb;
+}
+
+.site-list__item a:active,
+.site-list__item a:active + svg path,
+.site-list__item--search svg:active path {
   opacity: 0.3;
 }
 
-.site-list__item--search {
-  position: relative;
-
-  &::before {
-    content: url("../img/icon-search.svg");
-    position: absolute;
-    top: 35px;
-    left: 30px;
-  }
-}
-
+.site-list__item--search,
 .site-list__item--basket {
   position: relative;
 
-  &::before {
-    content: url("../img/icon-cart.svg");
+  svg {
     position: absolute;
-    top: 35px;
-    left: 30px;
+    top: 32px;
+    left: 10px;
+    cursor: pointer;
+
+    path {
+      fill: #63d1bb;
+    }
   }
 }
 
@@ -70,6 +74,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,11 +112,14 @@
   }
 
   .site-list__item--basket {
-    padding-top: 36px;
+    padding-top: 30px;
     padding-bottom: 33px;
     padding-left: 83px;
     border-left: 1px solid #ececec;
-    font-size: 17px;
+
+    a {
+      font-size: 17px;
+    }
   }
 
   .site-list__item--search {
@@ -123,10 +131,19 @@
     }
   }
 
+  .site-list__item--search,
+  .site-list__item--basket {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 35px;
+      left: 32px;
+    }
+  }
+
   .main-nav__list--delivery {
-    display: block;
     order: 3;
-    padding: 0;
     z-index: 10;
   }
 
@@ -141,13 +158,24 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__list--left {
-    margin-top: 35px;
+    margin-top: 0;
     order: -1;
+    height: 88px;
 
     a {
+      margin-right: 35px;
+      padding-top: 30px;
       font-size: 17px;
       line-height: 1.41;
     }
+  }
+
+  .site-list__item--order a {
+    margin-right: 20px;
+  }
+
+  .site-list__item--catalog {
+    border-right: 1px solid #ececec;
   }
 
   .site-list__item--basket {

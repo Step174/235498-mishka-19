@@ -17,7 +17,7 @@
 
 .page-main__heading {
   padding-top: 72px;
-  padding-bottom: 120px;
+  padding-bottom: 125px;
   font-family: @openSans;
   font-size: 27px;
   font-weight: bold;
@@ -28,16 +28,13 @@
 
 .page-main__product {
   margin-bottom: 36px;
+}
+
+.advantages-wrapper {
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: contain;
-  background-position: 0 100%;
-}
-
-.page-main__product img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 29px;
+  background-position: 0 0;
 }
 
 .page-main__contacts {
@@ -48,35 +45,33 @@
 
 @media (min-width: @tablet-width) {
   .page-main--wallpaper {
-    margin-bottom: 55px;
+    margin-bottom: 32px;
   }
 
   .page-main {
     position: relative;
-    margin-top: -60px;
+    margin-top: -46px;
     border-top: 1px solid #ececec;
   }
 
   .page-main__background {
-    height: 746px;
+    height: 628px;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
   }
 
   .page-main__heading {
-    padding-top: 160px;
+    padding-top: 155px;
     font-size: 43px;
+    line-height: 1.16;
   }
 
   .page-main__product {
-    min-height: 612px;
-    margin-bottom: 60px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: 768px 20px;
-    background-position: 20px 100%;
+    margin-bottom: 55px;
   }
 
   .page-main__contacts {
+    margin-bottom: 55px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: 768px 20px;
@@ -85,6 +80,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages-wrapper {
+    margin-bottom: 22px;
+  }
+
   .page-main--wallpaper {
     background-size: auto;
   }
@@ -103,6 +102,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 65px;
     background-size: auto 20px;
   }
 }

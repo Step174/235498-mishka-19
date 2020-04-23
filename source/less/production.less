@@ -6,7 +6,7 @@
 .production__heading {
   position: relative;
   margin: 0;
-  margin-top: 29px;
+  margin-top: 26px;
   margin-bottom: 26px;
   margin-left: 90px;
   font-family: @openSans;
@@ -17,8 +17,8 @@
   &::before {
     content: url("../img/icon-video.svg");
     position: absolute;
-    top: 5px;
-    left: -60px;
+    top: 6px;
+    left: -55px;
   }
 }
 
@@ -28,7 +28,7 @@
   a {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 47%;
     transform: translateX(-50px) translateY(-33px);
     display: block;
     width: 101px;
@@ -40,7 +40,7 @@
 .production__stateman {
   width: 192px;
   margin: 0 auto;
-  margin-top: 34px;
+  margin-top: 25px;
   margin-bottom: 24px;
   font-family: @openSans;
   font-size: 13px;
@@ -48,7 +48,7 @@
 }
 
 .production__order {
-  width: 192px;
+  width: 190px;
   margin-bottom: 33px;
 }
 
@@ -62,13 +62,19 @@
   .production__heading {
     order: 2;
     margin: 0;
-    margin-bottom: 41px;
+    margin-top: 32px;
+    margin-bottom: 31px;
     margin-left: 107px;
     font-size: 20px;
+
+    &::before {
+      top: 0;
+      left: -65px;
+    }
   }
 
-  .production__video {
-    margin-bottom: 43px;
+  .production__video a {
+    top: 48%;
   }
 
   .production-wrapper {
@@ -78,11 +84,14 @@
   .production__stateman {
     width: 581px;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 2;
   }
 
   .production__order {
-    width: 584px;
+    width: 578px;
     margin-bottom: 45px;
   }
 }
@@ -92,13 +101,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-bottom: 103px;
   }
 
   .production__heading {
+    align-self: flex-start;
     width: 150px;
     margin: 0;
-    margin-top: 70px;
-    margin-right: auto;
+    margin-top: 91px;
+    margin-right: 140px;
 
     &::before {
       top: -50px;
@@ -108,22 +119,24 @@
 
   .production__video {
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: -3px;
   }
 
   .production-wrapper {
     width: 230px;
-    margin-top: -300px;
-    margin-right: 30px;
+    margin-top: -279px;
+    margin-right: 60px;
   }
 
   .production__stateman {
-    width: 222px;
+    width: 225px;
+    margin: 0;
+    margin-bottom: 46px;
     font-size: 15px;
     line-height: 2;
   }
 
   .production__order {
-    width: 230px;
+    width: 226px;
   }
 }
