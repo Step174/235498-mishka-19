@@ -25,6 +25,10 @@
 .production__video {
   position: relative;
 
+  img {
+    width: 260px;
+  }
+
   a {
     position: absolute;
     left: 50%;
@@ -34,7 +38,17 @@
     width: 101px;
     height: 77px;
     background-image: url("../img/icon-play.svg");
+    transition: 0.2s;
   }
+}
+
+.production__video a:hover {
+  transform: translateX(-50px) translateY(-33px) scale(1.2);
+}
+
+.production__video a:active {
+  transform: translateX(-50px) translateY(-33px) scale(0.8);
+  opacity: 0.3;
 }
 
 .production__stateman {
@@ -71,6 +85,10 @@
       top: 0;
       left: -65px;
     }
+  }
+
+  .production__video img {
+    width: 668px;
   }
 
   .production__video a {
@@ -120,6 +138,10 @@
   .production__video {
     margin-right: auto;
     margin-bottom: -3px;
+
+    img {
+      width: 682px;
+    }
   }
 
   .production-wrapper {
