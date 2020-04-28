@@ -1,9 +1,15 @@
 .wrapper {
-  width: 320px;
+  min-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
+.wrapper-content {
+max-width: 1150px;
+margin: 0 auto;
+}
+
+/*@media (min-width: @tablet-width) {
   .wrapper {
     width: @tablet-width;
   }
@@ -13,4 +19,4 @@
   .wrapper {
     width: @desktop-width;
   }
-}
+}*/
