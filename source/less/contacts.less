@@ -1,3 +1,14 @@
+.contacts-background {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.contacts__container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .contacts__heading {
   padding-top: 41px;
   padding-bottom: 25px;
@@ -29,6 +40,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts-background {
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 20px;
+    background-position: 20px 0;
+  }
+
   .contacts__heading {
     position: relative;
     margin-bottom: 25px;
@@ -61,6 +79,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts-background {
+    background-size: auto 20px;
+  }
+
+  .contacts__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+  }
+
   .contacts__heading {
     width: 668px;
     margin-top: 80px;

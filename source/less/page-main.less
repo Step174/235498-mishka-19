@@ -1,5 +1,5 @@
 .page-main--wallpaper {
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   background-image: url("../img/bg-zigzag-fill.svg");
   background-repeat: repeat-x;
   background-position-x: 50%;
@@ -13,6 +13,11 @@
   background-repeat: no-repeat;
   background-position: 50% 18%;
   background-color: #fafafa;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .page-main__heading {
@@ -37,12 +42,6 @@
   background-position: 0 0;
 }
 
-.page-main__contacts {
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-size: contain;
-}
-
 @media (min-width: @tablet-width) {
   .page-main--wallpaper {
     margin-bottom: 32px;
@@ -58,6 +57,10 @@
     height: 628px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   .page-main__heading {
@@ -72,10 +75,6 @@
 
   .page-main__contacts {
     margin-bottom: 55px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: 768px 20px;
-    background-position: 20px 0;
   }
 }
 
@@ -88,6 +87,14 @@
     background-size: auto;
   }
 
+  .page-main__background {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
+
   .page-main__heading {
     width: 620px;
     font-size: 53px;
@@ -95,14 +102,6 @@
   }
 
   .page-main__product {
-    background-size: auto 20px;
-  }
-
-  .page-main__contacts {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 65px;
     background-size: auto 20px;
   }
 }
