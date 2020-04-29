@@ -275,100 +275,103 @@
         <a href="" class="client__write btn">Написать</a>
       </section>
 
-      <div class="contacts-background wrapper">
-      <section class="page-main__contacts contacts">
-        <h2 class="contacts__heading container">Контакты</h2>
-        <div class="contacts__info info container">
-          <ul class="info__mail">
-            <li class="info__mail-line info__mail-line--cell">e-mail:</li>
-            <li class="info__mail-line info__mail-line--parametr">
-              <a href="mailto:mail@htmlacademy.ru"> info@mimimishkashop.ru</a>
-            </li>
-          </ul>
+      <section class="page-main__contacts contacts-background contacts wrapper">
+        <div class="contacts__container">
+          <h2 class="contacts__heading container">Контакты</h2>
+          <div class="contacts__info info container">
+            <ul class="info__mail">
+              <li class="info__mail-line info__mail-line--cell">e-mail:</li>
+              <li class="info__mail-line info__mail-line--parametr">
+                <a href="mailto:mail@htmlacademy.ru"> info@mimimishkashop.ru</a>
+              </li>
+            </ul>
 
-          <ul class="info__city">
-            <li class="info__city-line info__city-line--cell">адрес:</li>
-            <li class="info__city-line info__city-line--parametr">г.Санкт-Петербуг,<br/>ул. Большая Конюшенная, д. 19/8, офис 101
-            </li>
-          </ul>
+            <ul class="info__city">
+              <li class="info__city-line info__city-line--cell">адрес:</li>
+              <li class="info__city-line info__city-line--parametr">
+                г.Санкт-Петербуг,<br />ул. Большая Конюшенная, д. 19/8, офис 101
+              </li>
+            </ul>
+          </div>
+
+          <a href="" class="address__map">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 772px)"
+                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x"
+              />
+
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 772px)"
+                srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x"
+              />
+              <img
+                src="img/map-mobile@1x.jpg"
+                srcset="img/map-mobile@2x.jpg 2x"
+                alt="карта"
+              />
+            </picture>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+              allowfullscreen
+            ></iframe>
+          </a>
+          <a href="" class="address__write btn">Напишите нам</a>
         </div>
-
-        <a href="" class="address__map">
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1150px)"
-              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"
-            />
-            <source
-              type="image/webp"
-              media="(min-width: 772px)"
-              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
-            />
-            <source
-              type="image/webp"
-              srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x"
-            />
-
-            <source
-              media="(min-width: 1150px)"
-              srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 772px)"
-              srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x"
-            />
-            <img
-              src="img/map-mobile@1x.jpg"
-              srcset="img/map-mobile@2x.jpg 2x"
-              alt="карта"
-            />
-          </picture>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen></iframe>
-
-        </a>
-        <a href="" class="address__write btn">Напишите нам</a>
       </section>
-    </div>
     </main>
 
     <footer class="page-footer wrapper">
-    <div class="page-footer-container">
-      <a class="page-footer__logo">
-        <svg width="102" height="34">
-          <use xlink:href="#footer-logo"></use>
-        </svg>
-      </a>
-      <ul class="page-footer__social container">
-        <li class="page-foot__social page-footer__social--in">
-          <a href="">
-            <svg width="22" height="21">
-              <use xlink:href="#icon-in"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="page-foot__social page-footer__social--fb">
-          <a href="">
-            <svg width="15" height="28">
-              <use xlink:href="#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="page-foot__social page-footer__social--tw">
-          <a href="">
-            <svg width="22" height="21">
-              <use xlink:href="#icon-tw"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a href="" class="page-footer__dev">
-        <p>Разработано</p>
-        <svg width="27" height="34">
-          <use xlink:href="#html-academy"></use>
-        </svg>
-      </a>
+      <div class="page-footer__container">
+        <a class="page-footer__logo">
+          <svg width="102" height="34">
+            <use xlink:href="#footer-logo"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__social container">
+          <li class="page-foot__social page-footer__social--in">
+            <a href="">
+              <svg width="22" height="21">
+                <use xlink:href="#icon-in"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-foot__social page-footer__social--fb">
+            <a href="">
+              <svg width="15" height="28">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-foot__social page-footer__social--tw">
+            <a href="">
+              <svg width="22" height="21">
+                <use xlink:href="#icon-tw"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="page-footer__dev">
+          <p>Разработано</p>
+          <svg width="27" height="34">
+            <use xlink:href="#html-academy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>

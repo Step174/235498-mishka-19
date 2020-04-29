@@ -4,7 +4,7 @@
   background-size: contain;
 }
 
-.contacts {
+.contacts__container {
   max-width: 1150px;
   margin: 0 auto;
 }
@@ -81,6 +81,13 @@
 @media (min-width: @desktop-width) {
   .contacts-background {
     background-size: auto 20px;
+  }
+
+  .contacts__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
   }
 
   .contacts__heading {
