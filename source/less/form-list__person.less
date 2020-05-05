@@ -18,6 +18,9 @@
   border-bottom: 2px solid #000000;
   padding-top: 17px;
   padding-bottom: 15px;
+  font-family: @openSans;
+  font-size: 19px;
+  line-height: 0.95;
 
   &::placeholder {
     font-family: @openSans;
@@ -25,6 +28,11 @@
     line-height: 1.06;
     color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.person__data input:hover,
+.person__data input:active {
+  border-color: #62d1ba;
 }
 
 @media (min-width: @tablet-width) {

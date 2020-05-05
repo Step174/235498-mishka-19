@@ -10,10 +10,13 @@
   width: 254px;
   min-height: 135px;
   border: 2px solid #000000;
+  font-family: @openSans;
+  font-size: 17px;
+  line-height: 1.06;
 
   &::placeholder {
-    padding-top: 18px;
-    padding-left: 17px;
+    padding-top: 5px;
+    padding-left: 10px;
     font-family: @openSans;
     font-size: 17px;
     line-height: 1.06;
@@ -24,6 +27,11 @@
 .form-list__text legend::after {
   left: 68px;
   width: 196px;
+}
+
+.text__comment textarea:hover,
+.text__comment textarea:active {
+  border-color: #62d1ba;
 }
 
 @media (min-width: @tablet-width) {
