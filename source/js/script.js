@@ -1,7 +1,8 @@
 var menuOpen = document.querySelector(".page-header__burger");
 var menu = document.querySelector(".main-nav__list--left");
 var menuRight = document.querySelector(".main-nav__list--right");
-
+var openCart = document.querySelector(".buy-cart");
+var popup = document.querySelector(".popup--overlay");
 
 menuOpen.classList.remove("visually-hidden");
 menu.classList.add("menu--close");
@@ -15,3 +16,17 @@ menuOpen.addEventListener ("click", function (evt) {
   menuOpen.classList.toggle("page-header__burger--close");
   if (document.activeElement != document.body) document.activeElement.blur();
 });
+
+openCart.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.add("popup-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("popup-show")) {
+      popup.classList.remove("popup-show");
+    }
+  }
+})
