@@ -4,7 +4,7 @@
   background-repeat: repeat-x;
   background-position-x: 50%;
   background-position-y: 101%;
-  background-size: 772px 25px;
+  background-size: contain;
 }
 
 .page-main__background {
@@ -45,6 +45,7 @@
 @media (min-width: @tablet-width) {
   .page-main--wallpaper {
     margin-bottom: 32px;
+    background-size: 768px 25px;
   }
 
   .page-main {
@@ -84,7 +85,8 @@
   }
 
   .page-main--wallpaper {
-    background-size: auto;
+    background-size: auto 36px;
+    background-position-y: 101px;
   }
 
   .page-main__background {
@@ -104,4 +106,10 @@
   .page-main__product {
     background-size: auto 20px;
   }
+
+  .advantages-wrapper {
+    background-size: auto 20px;
+  }
+
 }
+
