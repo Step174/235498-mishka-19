@@ -71,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1150px;
+    max-width: 772px;
     height: 143px;
     margin: 0 auto;
   }
@@ -92,10 +92,18 @@
   }
 
   .page-footer__social {
+    margin-top: 8px;
+
     border: none;
   }
 
   .page-footer__dev {
     margin-right: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__container {
+    max-width: 1150px;
   }
 }

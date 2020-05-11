@@ -32,8 +32,8 @@
   a {
     position: absolute;
     left: 50%;
-    top: 47%;
-    transform: translateX(-50px) translateY(-33px);
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
     display: block;
     width: 101px;
     height: 77px;
@@ -43,11 +43,11 @@
 }
 
 .production__video a:hover {
-  transform: translateX(-50px) translateY(-33px) scale(1.2);
+  transform: translateX(-50%) translateY(-50%) scale(1.2);
 }
 
 .production__video a:active {
-  transform: translateX(-50px) translateY(-33px) scale(0.8);
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
   opacity: 0.3;
 }
 
@@ -91,10 +91,6 @@
     width: 668px;
   }
 
-  .production__video a {
-    top: 48%;
-  }
-
   .production-wrapper {
     order: 3;
   }
@@ -136,7 +132,7 @@
   }
 
   .production__video {
-    margin-right: auto;
+    flex-grow: 1;
     margin-bottom: -3px;
 
     img {
