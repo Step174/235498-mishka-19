@@ -4,7 +4,7 @@
   background-repeat: repeat-x;
   background-position-x: 50%;
   background-position-y: 101%;
-  background-size: 772px 25px;
+  background-size: contain;
 }
 
 .page-main__background {
@@ -44,12 +44,13 @@
 
 @media (min-width: @tablet-width) {
   .page-main--wallpaper {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
+    background-size: 768px 25px;
   }
 
   .page-main {
     position: relative;
-    margin-top: -46px;
+    margin-top: -42px;
     border-top: 1px solid #ececec;
   }
 
@@ -81,10 +82,12 @@
 @media (min-width: @desktop-width) {
   .advantages-wrapper {
     margin-bottom: 22px;
+    background-size: auto 20px;
   }
 
   .page-main--wallpaper {
-    background-size: auto;
+    background-size: auto 36px;
+    background-position-y: 101px;
   }
 
   .page-main__background {

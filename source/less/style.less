@@ -1,6 +1,4 @@
 @import "fonts.less";
-@import "normalize.css";
-@import "variables.less";
 @import "wrapper.less";
 @import "container.less";
 @import "btn.less";
@@ -30,10 +28,18 @@
 @import "form-list__mail.less";
 @import "form-list__text";
 @import "page-footer.less";
+@import "variables.less";
+@import "popup.less";
+
 
 body {
+  position: relative;
   margin: 0;
   font-family: @openSans;
+}
+
+main {
+  display: block;
 }
 
 .display-none {

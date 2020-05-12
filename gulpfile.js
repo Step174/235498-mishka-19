@@ -10,6 +10,9 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -24,6 +27,21 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("cssold", function () {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -52,9 +70,25 @@ gulp.task("images", function () {
   .pipe(gulp.dest("build"));
  });
 
+
  gulp.task("clean", function () {
   return del("build");
  });
+
+
+ gulp.task('minify', () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+
+gulp.task('minijs', function () {
+  return gulp.src('source/js/script.js')
+        .pipe(uglify())
+        .pipe(rename("script.min.js"))
+        .pipe(gulp.dest('build/js'));
+});
 
 
 gulp.task("server", function () {
@@ -70,6 +104,19 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("serverold", function () {
+  server.init({
+    server: "source/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
 
-gulp.task("build", gulp.series("clean", "copy", "css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "minify", "minijs"));
 gulp.task("start", gulp.series("build", "server"));
+gulp.task("startold", gulp.series("cssold", "serverold"));

@@ -19,6 +19,16 @@
   border: 2px solid #444444;
   left: 0;
   top: -11px;
+  cursor: pointer;
+}
+
+.form-list__color input:hover + label::before {
+  border-color: #62d1ba;
+}
+
+.form-list__color input:active + label::before {
+  border-color: #444444;
+  opacity: 0.3;
 }
 
 .form-list__color input[type="checkbox"]:checked + label::after {
@@ -26,12 +36,13 @@
   position: absolute;
   left: 3px;
   top: -5px;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
   .form-background-color {
     background-color: #f1f1f1;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .form-list__color {
@@ -55,8 +66,8 @@
   }
 
   .form-list__color input[type="checkbox"]:checked + label::after {
-    left: 10px;
-    top: 2px;
+    left: 11px;
+    top: 1px;
   }
 
   .color__check li {
@@ -76,12 +87,15 @@
   .form-list__color {
     width: 925px;
 
-
     .color__check {
       width: 725px;
       margin-left: 115px;
       justify-content: space-between;
     }
+  }
+
+  .form-list__color label {
+    padding-left: 80px;
   }
 
   .form-background-color ul {

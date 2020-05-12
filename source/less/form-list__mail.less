@@ -1,5 +1,5 @@
 .form-list__mail {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .form-list__mail legend {
@@ -17,6 +17,7 @@
   padding-top: 17px;
   padding-bottom: 17px;
   font-size: 17px;
+  line-height: 0.95;
 
   &::placeholder {
     font-family: @openSans;
@@ -35,18 +36,24 @@
   content: url("../img/icon-mail.svg");
   position: absolute;
   top: 13px;
-  right: 8px;
+  right: 5px;
   opacity: 0.2;
+}
+
+.mail__adres input:hover,
+.mail__adres input:active {
+  border-color: #62d1ba;
 }
 
 @media (min-width: @tablet-width) {
   .form-list__mail {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   .form-list__mail input {
     width: 501px;
     margin-left: 162px;
+    padding-bottom: 14px;
     background-color: #f1f1f1;
 
     &::placeholder {

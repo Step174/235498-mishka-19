@@ -69,6 +69,10 @@
   display: none;
 }
 
+.menu--close {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     position: relative;
@@ -80,6 +84,7 @@
 
   .main-nav__list {
     display: flex;
+    align-self: flex-start;
     margin: 0;
     padding: 0;
     z-index: 10;
@@ -160,8 +165,8 @@
     height: 88px;
 
     a {
-      margin-right: 35px;
-      padding-top: 30px;
+      margin-right: 33px;
+      padding-top: 32px;
       font-size: 17px;
       line-height: 1.41;
     }
@@ -176,6 +181,7 @@
   }
 
   .site-list__item--basket {
+    padding-right: 3px;
     font-size: 17px;
     line-height: 1.41;
   }
