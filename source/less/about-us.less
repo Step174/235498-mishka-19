@@ -42,10 +42,13 @@
 
 .about-us__list-item--style::before {
   content: url("../img/icon-feature-money.svg");
+  left: 0;
 }
 
 .about-us__list-item--like::before {
   content: url("../img/icon-feature-heart.svg");
+  top: 15px;
+  left: 7px;
 }
 
 .about-us__list-item--hand {
@@ -53,6 +56,8 @@
 
   &::before {
     content: url("../img/icon-feature-ball.svg");
+    top: 12px;
+    left: 3px;
   }
 }
 
@@ -61,11 +66,15 @@
 
   &::before {
     content: url("../img/icon-feature-rocket.svg");
+    top: 13px;
+    left: -5px;
   }
 }
 
 .about-us__list-item--supply::before {
   content: url("../img/icon-feature-gift.svg");
+  top: 13px;
+  left: 4px;
 }
 
 @media (min-width: @tablet-width) {
@@ -100,10 +109,20 @@
   .about-us__list-item--eco {
     width: 205px;
     margin-right: 130px;
+
+    &::before {
+      top: 15px;
+      left: 9px;
+    }
   }
 
   .about-us__list-item--style {
     width: 235px;
+
+    &::before {
+      top: 13px;
+      left: 1px;
+    }
   }
 
   .about-us__list-item--like {
@@ -112,10 +131,19 @@
 
   .about-us__list-item--hand {
     width: 250px;
+
+    &::before {
+      top: 17px;
+    }
   }
 
   .about-us__list-item--support {
     width: 295px;
+
+    &::before {
+      top: 15px;
+      left: -8px;
+    }
   }
 
   .about-us__list-item--supply {

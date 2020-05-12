@@ -1,7 +1,7 @@
 var menuOpen = document.querySelector(".page-header__burger");
 var menu = document.querySelector(".main-nav__list--left");
 var menuRight = document.querySelector(".main-nav__list--right");
-var openCart = document.querySelector(".buy-cart");
+var openCart = document.querySelectorAll(".buy-cart");
 var popup = document.querySelector(".popup--overlay");
 
 menuOpen.classList.remove("visually-hidden");
@@ -17,9 +17,9 @@ menuOpen.addEventListener ("click", function (evt) {
   if (document.activeElement != document.body) document.activeElement.blur();
 });
 
-openCart.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.add("popup-show");
+
+for (var i = 0; i < openCart.length; i++) openCart[i].addEventListener("click", function(evt) {
+  evt.preventDefault(), popup.classList.add("popup-show")
 });
 
 window.addEventListener("keydown", function(evt) {

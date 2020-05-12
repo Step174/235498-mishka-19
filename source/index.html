@@ -217,7 +217,7 @@
           </picture>
 
           <p class="about-products__price">Цена: 990 руб.</p>
-          <a href="" class="about-products__order btn">Заказать</a>
+          <a href="" class="about-products__order buy-cart btn">Заказать</a>
         </div>
       </section>
 
@@ -253,8 +253,7 @@
           <blockquote class="user-review__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого
             количества лайков, как у популярных инстамамочек. В отчаянии, я
-            накупила аксессуаров и игрушек в Мишке,<br />
-            и мои фотографии сразу стали более стильными, а также набирают
+            накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
             больше лайков!
           </blockquote>
           <p class="user-review__name">Анастасия Красильникова</p>
@@ -290,43 +289,49 @@
             </ul>
           </div>
 
-          <a href="" class="address__map">
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width: 1150px)"
-                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 772px)"
-                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
-              />
-              <source
-                type="image/webp"
-                srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x"
-              />
+          <div class="address__map">
+            <a href="">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/map-desktop@1x.webp 1x,
+                    img/map-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 772px)"
+                  srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x"
+                />
 
-              <source
-                media="(min-width: 1150px)"
-                srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x"
-              />
-              <source
-                media="(min-width: 772px)"
-                srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x"
-              />
-              <img
-                src="img/map-mobile@1x.jpg"
-                srcset="img/map-mobile@2x.jpg 2x"
-                alt="карта"
-              />
-            </picture>
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 772px)"
+                  srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x"
+                />
+                <img
+                  src="img/map-mobile@1x.jpg"
+                  srcset="img/map-mobile@2x.jpg 2x"
+                  alt="карта"
+                />
+              </picture>
+            </a>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
               allowfullscreen
             ></iframe>
-          </a>
+          </div>
+
           <a href="" class="address__write btn">Напишите нам</a>
         </div>
       </section>
@@ -362,7 +367,10 @@
             </a>
           </li>
         </ul>
-        <a href="" class="page-footer__dev">
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="page-footer__dev"
+        >
           <p>Разработано</p>
           <svg width="27" height="34">
             <use xlink:href="#html-academy"></use>
@@ -372,18 +380,41 @@
     </footer>
 
     <div class="popup popup--overlay">
-      <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+      <form
+        class="popup-form"
+        action="https://echo.htmlacademy.ru"
+        method="POST"
+      >
         <h2 class="popup-form__heading">Добавить в корзину</h2>
 
         <fieldset class="popup-form__fieldset">
           <legend class="popup-form__legend">Выберите размер:</legend>
 
           <div class="popup-form__input">
-            <input class="popup-form__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <input
+              class="popup-form__radio visually-hidden"
+              type="radio"
+              id="size-s"
+              name="size"
+              value="1"
+              checked
+            />
             <label class="popup-form__label" for="size-s">S</label>
-            <input class="popup-form__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <input
+              class="popup-form__radio visually-hidden"
+              type="radio"
+              id="size-m"
+              name="size"
+              value="2"
+            />
             <label class="popup-form__label" for="size-m">M</label>
-            <input class="popup-form__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <input
+              class="popup-form__radio visually-hidden"
+              type="radio"
+              id="size-l"
+              name="size"
+              value="3"
+            />
             <label class="popup-form__label" for="size-l">L</label>
           </div>
         </fieldset>
