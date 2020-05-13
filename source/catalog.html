@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Каталог товаров</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="preload" href="fonts/opensans.woff2" as="font" />
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" />
   </head>
   <body>
     <svg
@@ -188,7 +190,7 @@
                 href=""
                 aria-label="добавить в корзину"
               >
-                <svg width="18" height="18">
+                <svg width="18" height="18" alt="Корзина">
                   <use xlink:href="#icon-basket"></use>
                 </svg>
               </a>
@@ -254,7 +256,7 @@
                 href=""
                 aria-label="добавить в корзину"
               >
-                <svg width="18" height="18">
+                <svg width="18" height="18" alt="Корзина">
                   <use xlink:href="#icon-basket"></use>
                 </svg>
               </a>
@@ -320,7 +322,7 @@
                 href=""
                 aria-label="добавить в корзину"
               >
-                <svg width="18" height="18">
+                <svg width="18" height="18" alt="Корзина">
                   <use xlink:href="#icon-basket"></use>
                 </svg>
               </a>
@@ -365,7 +367,7 @@
               alt="видео процесса изготовления"
             />
           </picture>
-          <a href=""></a>
+          <a href="" alt="Посмотреть видео"></a>
         </div>
         <div class="production-wrapper">
           <p class="production__stateman">
@@ -384,32 +386,35 @@
             <use xlink:href="#footer-logo"></use>
           </svg>
         </a>
-        <ul class="page-footer__social container">
-          <li class="page-foot__social page-footer__social--in">
+        <ul class="page-footer__social social">
+          <li class="social__in">
             <a href="">
-              <svg width="22" height="21">
+              <svg width="22" height="21" alt="Инстаграм">
                 <use xlink:href="#icon-in"></use>
               </svg>
             </a>
           </li>
-          <li class="page-foot__social page-footer__social--fb">
+          <li class="social__fb">
             <a href="">
-              <svg width="15" height="28">
+              <svg width="15" height="28" alt="Фэйсбук">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
-          <li class="page-foot__social page-footer__social--tw">
+          <li class="social__tw">
             <a href="">
-              <svg width="22" height="21">
+              <svg width="22" height="21" alt="Твиттер">
                 <use xlink:href="#icon-tw"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__dev">
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="page-footer__dev"
+        >
           <p>Разработано</p>
-          <svg width="27" height="34">
+          <svg width="27" height="34" alt="Логотип разработчика">
             <use xlink:href="#html-academy"></use>
           </svg>
         </a>
@@ -417,18 +422,41 @@
     </footer>
 
     <div class="popup popup--overlay">
-      <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+      <form
+        class="popup-form"
+        action="https://echo.htmlacademy.ru"
+        method="POST"
+      >
         <h2 class="popup-form__heading">Добавить в корзину</h2>
 
         <fieldset class="popup-form__fieldset">
           <legend class="popup-form__legend">Выберите размер:</legend>
 
           <div class="popup-form__input">
-            <input class="popup-form__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <input
+              class="popup-form__radio visually-hidden"
+              type="radio"
+              id="size-s"
+              name="size"
+              value="1"
+              checked
+            />
             <label class="popup-form__label" for="size-s">S</label>
-            <input class="popup-form__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <input
+              class="popup-form__radio visually-hidden"
+              type="radio"
+              id="size-m"
+              name="size"
+              value="2"
+            />
             <label class="popup-form__label" for="size-m">M</label>
-            <input class="popup-form__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <input
+              class="popup-form__radio visually-hidden"
+              type="radio"
+              id="size-l"
+              name="size"
+              value="3"
+            />
             <label class="popup-form__label" for="size-l">L</label>
           </div>
         </fieldset>

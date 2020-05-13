@@ -7,7 +7,7 @@ var popup = document.querySelector(".popup--overlay");
 menuOpen.classList.remove("visually-hidden");
 menu.classList.add("menu--close");
 menuRight.classList.add("menu--close");
-menuOpen.classList.add("page-header__burger--close");
+/*menuOpen.classList.add("page-header__burger--close");*/
 
 menuOpen.addEventListener ("click", function (evt) {
   evt.preventDefault();

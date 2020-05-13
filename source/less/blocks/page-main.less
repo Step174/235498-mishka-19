@@ -1,4 +1,4 @@
-.page-main--wallpaper {
+.page-main__wallpaper {
   background-color: #f9f9f9;
   background-image: url("../img/bg-zigzag-fill.svg");
   background-repeat: repeat-x;
@@ -36,6 +36,8 @@
 }
 
 .advantages-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: contain;
@@ -43,7 +45,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main--wallpaper {
+  .advantages-wrapper {
+    max-width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .page-main__wallpaper {
     margin-bottom: 31px;
     background-size: 768px 25px;
   }
@@ -81,11 +88,13 @@
 
 @media (min-width: @desktop-width) {
   .advantages-wrapper {
+    max-width: @desktop-width;
+    margin: 0 auto;
     margin-bottom: 22px;
     background-size: auto 20px;
   }
 
-  .page-main--wallpaper {
+  .page-main__wallpaper {
     background-size: auto 36px;
     background-position-y: 101px;
   }

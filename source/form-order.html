@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Форма для заказа</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body>
     <svg
@@ -271,10 +273,12 @@
                 >Номер телефона</label
               >
               <input
-                type="text"
+                type="tel"
                 name="tel"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                 id="form-tel"
+                required
+                pattern="\+*[0-9]{1,11}"
               />
             </div>
           </fieldset>
@@ -323,24 +327,24 @@
             <use xlink:href="#footer-logo"></use>
           </svg>
         </a>
-        <ul class="page-footer__social container">
-          <li class="page-foot__social page-footer__social--in">
+        <ul class="page-footer__social social">
+          <li class="social__in">
             <a href="">
-              <svg width="22" height="21">
+              <svg width="22" height="21" alt="Инстаграм">
                 <use xlink:href="#icon-in"></use>
               </svg>
             </a>
           </li>
-          <li class="page-foot__social page-footer__social--fb">
+          <li class="social__fb">
             <a href="">
-              <svg width="15" height="28">
+              <svg width="15" height="28" alt="Фэйсбук">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
-          <li class="page-foot__social page-footer__social--tw">
+          <li class="social__tw">
             <a href="">
-              <svg width="22" height="21">
+              <svg width="22" height="21" alt="Твиттер">
                 <use xlink:href="#icon-tw"></use>
               </svg>
             </a>
@@ -348,7 +352,7 @@
         </ul>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__dev">
           <p>Разработано</p>
-          <svg width="27" height="34">
+          <svg width="27" height="34" alt="Логотип разработчика">
             <use xlink:href="#html-academy"></use>
           </svg>
         </a>
