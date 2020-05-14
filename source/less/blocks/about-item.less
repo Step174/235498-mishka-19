@@ -18,7 +18,6 @@
   box-shadow: 0 5px 5px 0 #ececec;
 }
 
-
 @media (min-width: @tablet-width) {
   .about-item__rew {
     display: flex;
@@ -35,12 +34,15 @@
 @media (min-width: @desktop-width) {
   .about-item {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1052px;
     margin-bottom: 5px;
   }
 
   .about-item__rew {
+    width: 314px;
     flex-direction: column;
-    margin-right: 52px;
 
     picture {
       min-height: 462px;

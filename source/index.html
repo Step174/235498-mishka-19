@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body>
     <svg
@@ -95,13 +97,13 @@
         </ul>
         <ul class="main-nav__list main-nav__list--right site-list">
           <li class="site-list__item site-list__item--search">
-            <a href=""> Поиск по сайту</a>
+            <a href="" aria-label="Поиск"> Поиск по сайту</a>
             <svg width="18" height="18">
               <use xlink:href="#icon-search"></use>
             </svg>
           </li>
           <li class="site-list__item site-list__item--basket">
-            <a href=""> Корзина: пока пуста</a>
+            <a href="" aria-label="Корзина"> Корзина: пока пуста</a>
             <svg width="18" height="18">
               <use xlink:href="#icon-basket"></use>
             </svg>
@@ -132,7 +134,7 @@
           работы для дома
         </h1>
       </div>
-      <div class="page-main--wallpaper">
+      <div class="page-main__wallpaper">
         <ul class="page-main__group category container">
           <li class="category__item category__item--interier">
             <a href="">Предметы интерьера</a>
@@ -170,7 +172,7 @@
             </tr>
           </table>
 
-          <picture class="featured__image">
+          <picture class="about-product__image">
             <source
               type="image/webp"
               media="(min-width: 1150px)"
@@ -216,8 +218,8 @@
             />
           </picture>
 
-          <p class="about-products__price">Цена: 990 руб.</p>
-          <a href="" class="about-products__order buy-cart btn">Заказать</a>
+          <p class="about-product__price">Цена: 990 руб.</p>
+          <a href="" class="about-product__order buy-cart btn">Заказать</a>
         </div>
       </section>
 
@@ -261,10 +263,10 @@
         </div>
         <div class="client__nav arrow">
           <a href="" class="arrow__left"
-            ><img src="img/icon-left-arrow.svg" alt="стрелка в лево"
+            ><img src="img/icon-left-arrow.svg" alt="Стрелка в лево"
           /></a>
           <a href="" class="arrow__right"
-            ><img src="img/icon-right-arrow.svg" alt="стрелка в право"
+            ><img src="img/icon-right-arrow.svg" alt="Стрелка в право"
           /></a>
         </div>
         <a href="" class="client__write btn">Написать</a>
@@ -289,7 +291,7 @@
             </ul>
           </div>
 
-          <div class="address__map">
+          <div class="contacts__map">
             <a href="">
               <picture>
                 <source
@@ -332,35 +334,35 @@
             ></iframe>
           </div>
 
-          <a href="writeus.html" class="address__write btn">Напишите нам</a>
+          <a href="writeus.html" class="contacts__write btn">Напишите нам</a>
         </div>
       </section>
     </main>
 
     <footer class="page-footer wrapper">
       <div class="page-footer__container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" aria-label="Логотип">
           <svg width="102" height="34">
             <use xlink:href="#footer-logo"></use>
           </svg>
         </a>
-        <ul class="page-footer__social">
-          <li class="page-foot__social page-footer__social--in">
-            <a href="">
+        <ul class="page-footer__social social">
+          <li class="social__in">
+            <a href="" aria-label="Инстаграм">
               <svg width="22" height="21">
                 <use xlink:href="#icon-in"></use>
               </svg>
             </a>
           </li>
-          <li class="page-foot__social page-footer__social--fb">
-            <a href="">
+          <li class="social__fb">
+            <a href="" aria-label="Фэйсбук">
               <svg width="15" height="28">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
-          <li class="page-foot__social page-footer__social--tw">
-            <a href="">
+          <li class="social__tw">
+            <a href="" aria-label="Твиттер">
               <svg width="22" height="21">
                 <use xlink:href="#icon-tw"></use>
               </svg>
@@ -370,6 +372,7 @@
         <a
           href="https://htmlacademy.ru/intensive/adaptive"
           class="page-footer__dev"
+          aria-label="Переход на сайт HTML Academy"
         >
           <p>Разработано</p>
           <svg width="27" height="34">
